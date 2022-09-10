@@ -267,12 +267,10 @@ bats
 <details>
 <summary>Как скопировать файл с удаленного сервера Linux себе на Windows?
 
-
 Запускаем cmd от имени администратора
 
 C:\Windows\system32>cd C:\Program Files\PuTTY  (Переходим в папку с установленным PuTTY)
 
 C:\Program Files\PuTTY>pscp -P 22 user@192.168.0.3:client.ovpn c:\download\client.ovpn  (Запускаем модуль pscp, -P 22 если порт 22 ключ можно не указывать, указываем пользователя и адрес сервера : путь или имя файла, и в конце указываем имя файла и папку на хостовой машине с Windows)
-
 </b></details>
 
