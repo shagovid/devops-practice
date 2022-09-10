@@ -1,6 +1,6 @@
-## Shell Scripting
+## Сценарии оболочки (Shell + Cmd)
 
-### Shell Scripting Exercises
+### Варианты написания сценариев оболочки
 
 |Name|Topic|Objective & Instructions|Solution|Comments|
 |--------|--------|------|----|----|
@@ -17,15 +17,15 @@
 |Directories Comparison|Misc|[Exercise](directories_comparison.md)| :( | Basic
 |It's alive!|Misc|[Exercise](host_status.md)|[Solution](solutions/host_status.md) | Intermediate
 
-## Shell Scripting - Self Assessment
+## Сценарии оболочки - Основные операции
 
 <details>
-<summary>What does this line in shell scripts means?: <code>#!/bin/bash</code></summary><br><b>
+<summary>Что означает эта строка в сценариях оболочки?: <code>#!/bin/bash</code></summary><br><b>
 
 
-`#!/bin/bash` is She-bang
+`#!/bin/bash` она в начале любого скрипта
 
-/bin/bash is the most common shell used as default shell for user login of the linux system. The shell’s name is an acronym for Bourne-again shell. Bash can execute the vast majority of scripts and thus is widely used because it has more features, is well developed and better syntax.
+/bin/bash это наиболее распространенная оболочка, используемая в качестве оболочки по умолчанию для входа пользователя в систему Linux. Название оболочки является аббревиатурой от Bourne-again shell. Bash может выполнять подавляющее большинство скриптов и, таким образом, широко используется, потому что он имеет больше возможностей, хорошо разработан и имеет лучший синтаксис.
 
 </b></details>
 
@@ -260,5 +260,19 @@ https://superuser.com/a/1060002/167769
 <summary>What are you using for testing shell scripts?</summary><br><b>
 
 bats
+</b></details>
+
+## Сценарии оболочки - Winwows (cmd)
+
+<details>
+<summary>Как скопировать файл с удаленного сервера Linux себе на Windows?
+
+
+Запускаем cmd от имени администратора
+
+C:\Windows\system32>cd C:\Program Files\PuTTY  (Переходим в папку с установленным PuTTY)
+
+C:\Program Files\PuTTY>pscp -P 22 user@192.168.0.3:client.ovpn c:\download\client.ovpn  (Запускаем модуль pscp, -P 22 если порт 22 ключ можно не указывать, указываем пользователя и адрес сервера : путь или имя файла, и в конце указываем имя файла и папку на хостовой машине с Windows)
+
 </b></details>
 
